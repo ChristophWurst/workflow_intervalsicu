@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>workflow_intervalsicu</id>
+	<name>Upload files to intervals.icu</name>
+	<summary>Workflow integration for intervals.icu uploads</summary>
+	<description>Allows users to configure automatic uploads of fitness tracking files to intervals.icu</description>
+	<version>0.1.0</version>
+	<licence>agpl</licence>
+	<author>Christoph Wurst</author>
+	<namespace>WorkflowIntervalsicu</namespace>
+	<category>integration</category>
+	<category>workflow</category>
+	<dependencies>
+		<php min-version="7.4" max-version="8.0"/>
+		<nextcloud min-version="23" max-version="24"/>
+	</dependencies>
+</info>
