@@ -5,7 +5,7 @@
 	<name>Upload files to intervals.icu</name>
 	<summary>Workflow integration for intervals.icu uploads</summary>
 	<description>Allows users to configure automatic uploads of fitness tracking files to intervals.icu</description>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<namespace>WorkflowIntervalsicu</namespace>
