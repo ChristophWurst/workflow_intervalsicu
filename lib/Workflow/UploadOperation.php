@@ -7,6 +7,7 @@ namespace OCA\WorkflowIntervalsicu\Workflow;
 use OCA\WorkflowIntervalsicu\Service\Uploader;
 use OCP\EventDispatcher\Event;
 use OCP\Files\File;
+use OCP\Files\Node;
 use OCP\WorkflowEngine\IManager;
 use OCP\WorkflowEngine\IOperation;
 use OCP\WorkflowEngine\IRuleMatcher;
@@ -44,9 +45,10 @@ class UploadOperation implements IOperation {
 			return;
 		}
 
-		/** @var File $file */
-		$file = $event->getSubject();
-
-		$this->uploader->upload($file);
+		/** @var Node $node */
+		$node = $event->getSubject();
+		if ($node instanceof File) {
+			$this->uploader->upload($node);
+		}
 	}
 }
