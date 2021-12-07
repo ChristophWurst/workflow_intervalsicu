@@ -47,7 +47,11 @@ class UploadOperation implements IOperation {
 
 		/** @var Node $node */
 		$node = $event->getSubject();
-		if ($node instanceof File) {
+		if (!($node instanceof File)) {
+			return;
+		}
+
+		foreach ($ruleMatcher->getFlows(false) as $flow) {
 			$this->uploader->upload($node);
 		}
 	}
