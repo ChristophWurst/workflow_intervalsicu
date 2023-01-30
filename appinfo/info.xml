@@ -13,6 +13,6 @@
 	<category>workflow</category>
 	<dependencies>
 		<php min-version="8.0" max-version="8.2"/>
-		<nextcloud min-version="23" max-version="24"/>
+		<nextcloud min-version="25" max-version="25"/>
 	</dependencies>
 </info>
